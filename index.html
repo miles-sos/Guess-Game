@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GUESSING GAME</title>
+    <link rel="stylesheet" href="guess.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>MILES GUESSING GAME 😁</h1>
+      <div id="main">
+        <div id="form-group">
+          <div class="input-group">
+            <div>
+              <label for="maxNum" class="info"
+                >Enter or Choose a Maximum Number Greater than 0</label
+              >
+            </div>
+            <div>
+              <input type="number" id="maxNum" min="1" />
+              <input type="button" value="Set Number" id="setMax" />
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="firsGuess" class="info">Make your first guess</label>
+            <div>
+              <input type="number" id="firstGuess" min="0" />
+              <input type="button" value="Try" id="try" />
+            </div>
+          </div>
+          <h3 class="messaging">Start Guessing...</h3>
+          <h4 class="attempts"></h4>
+        </div>
+        <div id="gameControls">
+          <div id="actions">
+            <button class="btn again">Restart</button>
+            <button class="btn quit">QUIT</button>
+          </div>
+          <h3 id="gameLabel">Guess 👇 My Number</h3>
+          <div class="number">?</div>
+        </div>
+      </div>
+    </div>
+    <script src="myGuessGame.js"></script>
+  </body>
+</html>
